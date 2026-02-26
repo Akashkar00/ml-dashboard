@@ -21,7 +21,7 @@ def load_model():
     model_path = "model.pkl"
     if not os.path.exists(model_path):
         with st.spinner("Downloading model... please wait ⏳"):
-            url = "https://drive.google.com/uc?id=1mcUPUXruvJ9DIABFcw1c41lqR8kuAGiv"
+            url = "https://drive.google.com/uc?id=1rrKhnksQSI9su-hwGznF-QZ1ACSiDr9x"
             gdown.download(url, model_path, quiet=False)
     with open(model_path, "rb") as f:
         model = pickle.load(f)
